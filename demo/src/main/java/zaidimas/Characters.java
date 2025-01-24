@@ -32,7 +32,6 @@ public class Characters {
     public int stunTurns = 0;
 
     public Character() {
-      // Initialize statusEffects as an empty list
       this.statusEffects = new LinkedList<>();
     }
   }
