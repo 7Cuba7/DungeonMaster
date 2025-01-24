@@ -1,0 +1,359 @@
+{
+  "characterGroup": {
+    "heroes": [
+      {
+        "name": "Wizard",
+        "type": "arcane magic",
+        "hp": 200,
+        "speed": 200,
+        "resistances": {
+          "magic": 65,
+          "fire": 15,
+          "nature": 20,
+          "poison": 25,
+          "physical": 10,
+          "explosive": 12
+        },
+        "criticalDamage": 25,
+        "abilities": [
+          {
+            "name": "Arcane Blast",
+            "element": "magic",
+            "damage": 45
+          },
+          {
+            "name": "Stick attack",
+            "element": "physical",
+            "damage": 30
+          }
+        ]
+      },
+      {
+        "name": "Knight",
+        "type": "sword, shield",
+        "hp": 200,
+        "speed": 77,
+        "resistances": {
+          "magic": 20,
+          "fire": 15,
+          "nature": 10,
+          "poison": 25,
+          "physical": 50,
+          "explosive": 33
+        },
+        "criticalDamage": 18,
+        "abilities": [
+          {
+            "name": "Shield Bash",
+            "element": "physical",
+            "damage": 30
+          },
+          {
+            "name": "Sword Strike",
+            "element": "physical",
+            "damage": 35
+          }
+        ]
+      },
+      {
+        "name": "Tree",
+        "type": "nature",
+        "hp": 200,
+        "speed": 56,
+        "resistances": {
+          "magic": 10,
+          "fire": 20,
+          "nature": 60,
+          "poison": 15,
+          "physical": 25,
+          "explosive": 10
+        },
+        "criticalDamage": 15,
+        "abilities": [
+          {
+            "name": "Root Strike",
+            "element": "nature",
+            "damage": 35
+          },
+          {
+            "name": "Apple shot",
+            "element": "physical",
+            "damage": 15
+          }
+        ]
+      },
+      {
+        "name": "Gnome",
+        "type": "explosive",
+        "hp": 200,
+        "speed": 86,
+        "resistances": {
+          "magic": 10,
+          "fire": 35,
+          "nature": 15,
+          "poison": 20,
+          "physical": 20,
+          "explosive": 25
+        },
+        "criticalDamage": 22,
+        "abilities": [
+          {
+            "name": "Bomb Toss",
+            "element": "explosive",
+            "damage": 50
+          },
+          {
+            "name": "Lighter attack",
+            "element": "fire",
+            "damage": 30
+          }
+        ]
+      },
+      {
+        "name": "Robot",
+        "type": "explosive",
+        "hp": 200,
+        "speed": 68,
+        "resistances": {
+          "magic": 25,
+          "fire": 10,
+          "nature": 20,
+          "poison": 15,
+          "physical": 30,
+          "explosive": 23
+        },
+        "criticalDamage": 20,
+        "abilities": [
+          {
+            "name": "Energy Blast",
+            "element": "explosive",
+            "damage": 40
+          },
+          {
+            "name": "Metal Punch",
+            "element": "physical",
+            "damage": 30
+          }
+        ]
+      },
+      {
+        "name": "Pyromancer",
+        "type": "fire",
+        "hp": 200,
+        "speed": 71,
+        "resistances": {
+          "magic": 15,
+          "fire": 55,
+          "nature": 20,
+          "poison": 15,
+          "physical": 15,
+          "explosive": 13
+        },
+        "criticalDamage": 23,
+        "abilities": [
+          {
+            "name": "Flame Wave",
+            "element": "fire",
+            "damage": 42
+          },
+          {
+            "name": "Punch",
+            "element": "fire",
+            "damage": 34
+          }
+        ]
+      }
+    ],
+    "monsters": [
+      {
+        "name": "Spider",
+        "type": "poison",
+        "hp": 200,
+        "speed": 92,
+        "resistances": {
+          "magic": 20,
+          "fire": 15,
+          "nature": 15,
+          "poison": 50,
+          "physical": 5,
+          "explosive": 3
+        },
+        "criticalDamage": 18,
+        "abilities": [
+          {
+            "name": "Venom Bite",
+            "element": "poison",
+            "damage": 25
+          },
+          {
+            "name": "Web shooter",
+            "element": "physical",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "Fire Lizard",
+        "type": "fire",
+        "hp": 200,
+        "speed": 78,
+        "resistances": {
+          "magic": 15,
+          "fire": 60,
+          "nature": 20,
+          "poison": 15,
+          "physical": 10,
+          "explosive": 7
+        },
+        "criticalDamage": 22,
+        "abilities": [
+          {
+            "name": "Fire Breath",
+            "element": "fire",
+            "damage": 38
+          },
+          {
+            "name": "Magma Shot",
+            "element": "nature",
+            "damage": 45
+          }
+        ]
+      },
+      {
+        "name": "Goblin",
+        "type": "axe",
+        "hp": 200,
+        "speed": 86,
+        "resistances": {
+          "magic": 10,
+          "fire": 15,
+          "nature": 10,
+          "poison": 25,
+          "physical": 20,
+          "explosive": 26
+        },
+        "criticalDamage": 20,
+        "abilities": [
+          {
+            "name": "Axe Slash",
+            "element": "physical",
+            "damage": 28
+          },
+          {
+            "name": "Tiny bomb",
+            "element": "explosive",
+            "damage": 20
+          }
+        ]
+      },
+      {
+        "name": "Rock Golem",
+        "type": "nature",
+        "hp": 200,
+        "speed": 51,
+        "resistances": {
+          "magic": 15,
+          "fire": 40,
+          "nature": 50,
+          "poison": 20,
+          "physical": 40,
+          "explosive": 42
+        },
+        "criticalDamage": 17,
+        "abilities": [
+          {
+            "name": "Earth Smash",
+            "element": "nature",
+            "damage": 40
+          },
+          {
+            "name": "Stone Throw",
+            "element": "physical",
+            "damage": 35
+          }
+        ]
+      },
+      {
+        "name": "Dracula",
+        "type": "blood magic",
+        "hp": 200,
+        "speed": 73,
+        "resistances": {
+          "magic": 35,
+          "fire": 10,
+          "nature": 20,
+          "poison": 30,
+          "physical": 25,
+          "explosive": 14
+        },
+        "criticalDamage": 20,
+        "abilities": [
+          {
+            "name": "Blood Drain",
+            "element": "magic",
+            "damage": 30
+          },
+          {
+            "name": "Claw attack",
+            "element": "physical",
+            "damage": 23
+          }
+        ]
+      },
+      {
+        "name": "Witch",
+        "type": "magic",
+        "hp": 200,
+        "speed": 76,
+        "resistances": {
+          "magic": 25,
+          "fire": 15,
+          "nature": 30,
+          "poison": 15,
+          "physical": 20,
+          "explosive": 22
+        },
+        "criticalDamage": 20,
+        "abilities": [
+          {
+            "name": "Dark Hex",
+            "element": "magic",
+            "damage": 35
+          },
+          {
+            "name": "Animal attack",
+            "element": "nature",
+            "damage": 29
+          }
+        ]
+      },
+      {
+        "name": "Rat",
+        "type": "small attack",
+        "hp": 200,
+        "speed": 94,
+        "resistances": {
+          "magic": 5,
+          "fire": 10,
+          "nature": 5,
+          "poison": 10,
+          "physical": 20,
+          "explosive": 10
+        },
+        "criticalDamage": 17,
+        "abilities": [
+          {
+            "name": "Quick Bite",
+            "element": "physical",
+            "damage": 20
+          },
+          {
+            "name": "Tail Whip",
+            "element": "physical",
+            "damage": 15
+          }
+        ]
+      }
+    ]
+  }
+}
