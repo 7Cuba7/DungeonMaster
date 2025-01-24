@@ -91,16 +91,15 @@ public class Gameplay {
   }
 
   public Characters.Character cloneCharacter(Characters.Character original) {
-    // Create a new instance of the Character
     Characters.Character clone = new Characters.Character();
     clone.name = original.name;
     clone.type = original.type;
-    clone.hp = original.hp; // HP is independent per instance
+    clone.hp = original.hp;
     clone.speed = original.speed;
-    clone.resistances = new HashMap<>(original.resistances); // Deep copy of resistances
+    clone.resistances = new HashMap<>(original.resistances); 
     clone.criticalDamage = original.criticalDamage;
-    clone.abilities = new ArrayList<>(original.abilities); // Deep copy of abilities
-    clone.statusEffects = new LinkedList<>(original.statusEffects); // Deep copy of status effects
+    clone.abilities = new ArrayList<>(original.abilities);
+    clone.statusEffects = new LinkedList<>(original.statusEffects); 
     clone.poisonTurns = original.poisonTurns;
     clone.bleedTurns = original.bleedTurns;
     clone.stunTurns = original.stunTurns;
@@ -122,19 +121,18 @@ public class Gameplay {
     System.out.println("Heroes Team");
     System.out.println("-----------");
 
-    // Print each hero's info in separate lines
+    // Prints each hero's info
     for (Characters.Character hero : selectedHeroes) {
       System.out.println(hero.name);
       System.out.println("Hp:" + hero.hp);
       System.out.println("-----------");
     }
 
-    // Space between Heroes and Monsters Team
     System.out.println(RED);
     System.out.println("\nMonsters Team" + RED);
     System.out.println("-----------");
 
-    // Print each monster's info in separate lines
+    // Prints each monster's info
     for (Characters.Character monster : selectedMonsters) {
       System.out.println(monster.name);
       System.out.println("Hp:" + monster.hp);
@@ -401,11 +399,11 @@ public class Gameplay {
 
     System.out.println("\n" + current.name + " is taking a turn!");
 
-    // Iterate through each hero to calculate potential damage
+    // Iterates through each hero to calculate potential damage
     for (int i = 0; i < selectedHeroes.size(); i++) {
       Characters.Character target = selectedHeroes.get(i);
 
-      // Iterate through each ability to find the one with the highest damage
+      // Iterates through each ability to find the one with the highest damage
       for (int j = 0; j < current.abilities.size(); j++) {
         Characters.Ability ability = current.abilities.get(j);
 
@@ -429,7 +427,7 @@ public class Gameplay {
       }
     }
 
-    // Now perform the attack with the best choice
+    // Perform the attack with the best choice
     Characters.Character target = selectedHeroes.get(bestAttackChoice);
     Characters.Ability bestAbility = current.abilities.get(bestAbilityChoice);
     calculations(current, bestAttackChoice, bestAbilityChoice);
@@ -442,7 +440,6 @@ public class Gameplay {
 
   public void endGame() {
     System.out.println("Battle ended! Thank you for playing.");
-    // Handle post-battle logic, like showing stats or returning to the menu
     System.exit(0); // Ends the game
   }
 }
